@@ -1,0 +1,28 @@
+#version: '3'
+# 
+#services:
+#  db:
+#    image: mysql:latest
+#    restart: always
+#    container_name: db
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: league	
+#      MYSQL_USER: david
+#      MYSQL_PASSWORD: secret
+#    volumes:
+#      - ./futbolSpring_dump.sql:/docker-entrypoint-initdb.d/dump.sql
+#    ports:
+#      - "3307:3306"
+# 
+#  api:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    container_name: api
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - db
+#    command: sh -c "sleep 20 && java -jar app.jar"
+# 
